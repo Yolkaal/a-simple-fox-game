@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 589828725}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1806,11 +1806,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ec2550af545828d9bbba913ccf39fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  playerData: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 5a9aa99519569e661a26eb5c8c711281, type: 2}
   isGrounded: 0
+  isCrouched: 0
+  isSimplyJumping: 0
   canDoubleJump: 0
   canFly: 0
-  flySpeed: 0
 --- !u!136 &1554136336
 CapsuleCollider:
   m_ObjectHideFlags: 0

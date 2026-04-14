@@ -13,17 +13,18 @@ public class GroundCollisionChecker : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ground")
+        if (other.CompareTag("Ground"))
         {
-            playerMovement.setGroundedStatus(true);
+            playerMovement.SetGroundedStatus(true);
+            playerMovement.SetDoubleJumpStatus(true);
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Ground")
+        if (other.CompareTag("Ground"))
         {
-            playerMovement.setGroundedStatus(false);
+            playerMovement.SetGroundedStatus(false);
         }
     }
 }
