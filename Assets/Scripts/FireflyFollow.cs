@@ -37,15 +37,13 @@ public class FireflyFollow : MonoBehaviour
 
         ApplyIdleMovement();
 
-        // LOGIQUE DE MOUVEMENT :
         if (distance < repelThreshold)
         {
-            // TROP PROCHE : On repousse
             ApplyRepelMovement();
         }
         else if (distance > followThreshold)
         {
-            // TROP LOIN : On suit
+
             ApplyFollowMovement();
         }
 
@@ -61,10 +59,8 @@ public class FireflyFollow : MonoBehaviour
 
     private void ApplyRepelMovement()
     {
-        // Direction opposée au joueur
         Vector3 direction = (transform.position - target.position).normalized;
         
-        // On applique une force pour s'éloigner
         _rb.AddForce(direction * repelStrength);
     }
 
