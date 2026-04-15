@@ -54,10 +54,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0, y: -6378100, z: 0}
   type:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   atmosphericScattering:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   renderingMode:
     m_OverrideState: 0
@@ -276,7 +276,7 @@ MonoBehaviour:
     m_Value: 0
   skyAmbientMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   planetRadius:
     m_OverrideState: 0
     m_Value: 6378.1
@@ -312,8 +312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   mode:
-    m_OverrideState: 1
-    m_Value: 4
+    m_OverrideState: 0
+    m_Value: 0
   meteringMode:
     m_OverrideState: 0
     m_Value: 2
@@ -327,10 +327,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   limitMin:
-    m_OverrideState: 1
-    m_Value: 2
+    m_OverrideState: 0
+    m_Value: -1
   limitMax:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 14
   curveMap:
     m_OverrideState: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   proceduralRadii:
     m_OverrideState: 0
-    m_Value: {x: 0.15, y: 0.15}
+    m_Value: {x: 0.3, y: 0.3}
   maskMinIntensity:
     m_OverrideState: 0
     m_Value: -30

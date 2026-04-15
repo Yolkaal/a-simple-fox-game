@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b948393cde961b2aa993ef738e47000d, type: 3}
   m_Name: PlayerMovementData
   m_EditorClassIdentifier: Assembly-CSharp::MovableEntitiesData
-  speed: 10
-  jumpForce: 10
-  isDoubleJumpUnlocked: 0
+  speed: 5
+  jumpForce: 5
+  isDoubleJumpUnlocked: 1
   isFlyUnlocked: 0
-  flySpeed: 15
+  flySpeed: 20
   crouchSpeedModifier: 0.8
   crouchJumpForceModifier: 1.1
   airborneJumpForceModifier: 0.8
-  airborneSpeedModifier: 0.6
+  airborneSpeedModifier: 0.4
   airborneDirectionThreshold: 0.9
