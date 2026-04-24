@@ -171,4 +171,9 @@ public class PlayerMovement : MonoBehaviour
         targetVelocity.y = _rb.linearVelocity.y;
         return targetVelocity;
     }
+
+    public bool GetIsCrouched()
+    {
+        return isCrouched;
+    }
 }
