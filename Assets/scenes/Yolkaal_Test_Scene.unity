@@ -525,8 +525,8 @@ MonoBehaviour:
   m_MaxDepthBias: 0.001
   m_ShadowResolution:
     m_Override: 512
-    m_UseOverride: 1
-    m_Level: 0
+    m_UseOverride: 0
+    m_Level: 3
   m_ShadowDimmer: 1
   m_VolumetricShadowDimmer: 1
   m_ShadowFadeDistance: 10000
@@ -577,13 +577,13 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 1, g: 0.90918875, b: 0.7688679, a: 1}
-  m_Intensity: 40000
+  m_Intensity: 6400
   m_Range: 500
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -629,7 +629,7 @@ Light:
   m_ShapeRadius: 0.025
   m_ShadowAngle: 0
   m_LightUnit: 2
-  m_LuxAtDistance: 200
+  m_LuxAtDistance: 80
   m_EnableSpotReflector: 1
 --- !u!4 &730095049
 Transform:
@@ -640,7 +640,7 @@ Transform:
   m_GameObject: {fileID: 730095046}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -22.54, y: 31.28, z: -23.49}
+  m_LocalPosition: {x: -22.54, y: 21.41, z: -31.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
