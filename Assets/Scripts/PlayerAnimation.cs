@@ -17,7 +17,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             animator.SetBool("isCrouching", true);
         }
-        else if (playerMovement.GetIsJumping())
+        else if (!playerMovement.GetIsGrounded() && playerMovement.GetVerticalVelocity()>0)
         {
             animator.SetBool("isJumping", true);
         }
