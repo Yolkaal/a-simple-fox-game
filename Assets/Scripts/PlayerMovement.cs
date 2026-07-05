@@ -187,9 +187,8 @@ public class PlayerMovement : MonoBehaviour
         return _rb.linearVelocity.y;
     }
 
-    public float GetHorizontalDirection()
+    public Vector2 GetHorizontalVelocity()
     {
-        var HorizontalDirection = new Vector2(_rb.linearVelocity.x, _rb.linearVelocity.z);
-        
+        return new Vector2(_rb.linearVelocity.x,  _rb.linearVelocity.z);
     }
 }
