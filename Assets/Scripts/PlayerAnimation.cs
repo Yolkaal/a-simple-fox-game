@@ -5,6 +5,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerMovement playerMovement;
+    private bool alreadyMoving;
 
     private void Start()
     {
@@ -32,23 +33,28 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (playerMovement.GetIsGrounded())
             {
-                if (playerMovement.GetHorizontalVelocity().x > 0.1)
+                if (playerMovement.GetHorizontalVelocity().x > 0.1 && !alreadyMoving)
                 {
                     animator.SetBool("isWalkingRight", true);
+                    alreadyMoving = true;
                 }
 
-                if (playerMovement.GetHorizontalVelocity().x < -0.1)
+                if (playerMovement.GetHorizontalVelocity().x < -0.1 && !alreadyMoving)
                 {
                     animator.SetBool("isWalkingLeft", true);
+                    alreadyMoving = true;
                 }
-                if (playerMovement.GetHorizontalVelocity().y > 0.1)
+                
+                if (playerMovement.GetHorizontalVelocity().y > 0.1 && !alreadyMoving)
                 {
                     animator.SetBool("isWalkingUp", true);
+                    alreadyMoving = true;
                 }
 
-                if (playerMovement.GetHorizontalVelocity().y < -0.1)
+                if (playerMovement.GetHorizontalVelocity().y < -0.1 && !alreadyMoving)
                 {
                     animator.SetBool("isWalkingDown", true);
+                    alreadyMoving = true;
                 }
 
                 if (playerMovement.GetHorizontalVelocity() == Vector2.zero)
@@ -57,6 +63,7 @@ public class PlayerAnimation : MonoBehaviour
                     animator.SetBool("isWalkingLeft", false);
                     animator.SetBool("isWalkingUp", false);
                     animator.SetBool("isWalkingDown", false);
+                    alreadyMoving = false;
                 }
             }
         }
